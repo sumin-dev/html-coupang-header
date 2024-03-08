@@ -64,12 +64,11 @@ header {
   width: 1020px;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 34px 40px 42px;
+  grid-template-rows: 74px 42px;
   grid-template-columns: 110px 246px 545px 1fr 1fr;
   grid-template-areas:
     'button--category logo search myCoupang cart'
-    'button--category logo search myCoupang cart'
-    'button--category gnb-menu gnb-menu gnb-menu gnb-menu';
+    'button--category gnb-menu gnb-menu myCoupang cart';
 }
 
 /* header > button--category 영역 */
@@ -193,7 +192,7 @@ header {
   padding: 24px 0px 24px 20px;
 
   position: absolute;
-  top: 130%;
+  top: 85%;
   left: -10%;
 
   font-size: 1.2rem;
@@ -274,7 +273,7 @@ header {
   line-height: 6;
 
   position: absolute;
-  top: 130%;
+  top: 85%;
   left: -320%;
 
   font-size: 1.4rem;
@@ -322,4 +321,8 @@ header {
 .gnb-menu li {
   display: inline-block;
   padding: 6px 14px;
+}
+
+.gnb-menu li:last-child {
+  padding: 6px 0px 6px 14px;
 }
